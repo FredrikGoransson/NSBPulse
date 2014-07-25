@@ -1,5 +1,5 @@
 ﻿using System;
-using NSBPulseMessages;
+using NSBPulse.Message;
 using NServiceBus;
 
 namespace NSBPulse

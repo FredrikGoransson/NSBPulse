@@ -44,18 +44,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageTypeInvestigator.cs" />
+    <Compile Include="Message\HeartBeatChallenge.cs" />
+    <Compile Include="Message\HeartBeatConfirm.cs" />
     <Compile Include="PulseMessageHandler.cs" />
     <Compile Include="PulseMessageSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PulseTracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NSBPulseMessages\NSBPulseMessages.csproj">
-      <Project>{4E7613E0-EF7B-4BC1-94F0-4CCFBC681EC0}</Project>
-      <Name>NSBPulseMessages</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

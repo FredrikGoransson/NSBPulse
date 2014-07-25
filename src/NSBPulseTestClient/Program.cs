@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
-using NSBPulseMessages;
 using NServiceBus;
 using NServiceBus.Unicast.Subscriptions;
 
@@ -52,13 +47,6 @@ namespace NSBPulseTestClient
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Test Client Startup.Run");
             Console.ResetColor();
-
-
-            var subscriptionStorage = NServiceBus.Configure.Instance.Builder.Build<ISubscriptionStorage>();
-            var subscriberAddressesForMessage = subscriptionStorage.GetSubscriberAddressesForMessage(new[] {new MessageType(typeof (HeartBeatChallenge))});
-
-           
-
         }
 
         public void Stop()

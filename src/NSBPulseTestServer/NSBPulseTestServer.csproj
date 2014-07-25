@@ -58,10 +58,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NSBPulseMessages\NSBPulseMessages.csproj">
-      <Project>{4e7613e0-ef7b-4bc1-94f0-4ccfbc681ec0}</Project>
-      <Name>NSBPulseMessages</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NSBPulseTestMessages\NSBPulseTestMessages.csproj">
       <Project>{d6f0667b-a64c-4404-88f7-e69fac886339}</Project>
       <Name>NSBPulseTestMessages</Name>
